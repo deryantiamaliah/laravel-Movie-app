@@ -10,6 +10,6 @@ class ReviewController extends Controller
     public function index()
     {
         $reviews = Review::all();
-        return view('review.index', compact('reviews'));
+        return view('review', compact('reviews'));
     }
 }

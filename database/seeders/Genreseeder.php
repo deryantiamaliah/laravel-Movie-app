@@ -6,7 +6,7 @@ use App\Models\Genre;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class Genreseeder extends Seeder
+class GenreSeeder extends Seeder
 {
     /**
      * Run the database seeds.
