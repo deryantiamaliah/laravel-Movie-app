@@ -156,8 +156,8 @@
                         <a
                             class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
                             href="/reviews"
-                            @click="selected = (selected === 'reviews' ? '':'reviews')"
-                            :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'reviews') }"
+                            @click="selected = (selected === 'Reviews' ? '':'Reviews')"
+                            :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Reviews') }"
                         >
                             <svg class="fill-current" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_130_9756)">

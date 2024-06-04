@@ -54,7 +54,7 @@
 
                         <div class="col-span-4 items-center sm:flex">
                             <p class="text-sm font-medium text-black dark:text-white">
-                                {{ $genre['descripsion'] }}
+                                {{ $genre['description'] }}
                             </p>
                         </div>
 
