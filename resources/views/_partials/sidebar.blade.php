@@ -1,6 +1,6 @@
 <aside
     :class="sidebarToggle ? 'translate-x-0' : '-translate-x-full'"
-    class="absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-black duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0"
+    class="absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-black duration-300 ease-linear lg:static lg:translate-x-0"
     @click.outside="sidebarToggle = false"
 >
     <!-- SIDEBAR HEADER -->
@@ -31,10 +31,10 @@
                     <!-- Menu Item Dashboard -->
                     <li>
                         <a
-                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
+                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                             href="/"
                             @click="selected = (selected === 'Dashboard' ? '':'Dashboard')"
-                            :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Dashboard') }"
+                            :class="{ 'bg-graydark': (selected === 'Dashboard') }"
                         >
                             <svg class="fill-current" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -61,10 +61,10 @@
 
                     <li>
                         <a
-                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
+                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                             href="/products"
                             @click="selected = (selected === 'Products' ? '':'Products')"
-                            :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Products') }"
+                            :class="{ 'bg-graydark': (selected === 'Products') }"
                         >
                             <svg class="fill-current" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_130_9807)">
@@ -104,10 +104,10 @@
                     <!-- Menu Item Chart -->
                     <li>
                         <a
-                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
+                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                             href="/movies"
                             @click="selected = (selected === 'Movies' ? '':'Movies')"
-                            :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Movies') }"
+                            :class="{ 'bg-graydark': (selected === 'Movies') }"
                         >
                             <svg class="fill-current" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_130_9756)">
@@ -129,10 +129,10 @@
 
                     <li>
                         <a
-                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
+                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                             href="/genres"
                             @click="selected = (selected === 'Genres' ? '':'Genres')"
-                            :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Genres') }"
+                            :class="{ 'bg-graydark': (selected === 'Genres') }"
                         >
                             <svg class="fill-current" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_130_9756)">
@@ -154,10 +154,10 @@
 
                     <li>
                         <a
-                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
+                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                             href="/reviews"
                             @click="selected = (selected === 'Reviews' ? '':'Reviews')"
-                            :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Reviews') }"
+                            :class="{ 'bg-graydark': (selected === 'Reviews') }"
                         >
                             <svg class="fill-current" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_130_9756)">
@@ -179,10 +179,10 @@
 
                     <li>
                         <a
-                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
+                            class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                             href="#"
                             @click="selected = (selected === 'Roles' ? '':'Roles')"
-                            :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Roles') }"
+                            :class="{ 'bg-graydark': (selected === 'Roles') }"
                         >
                             <svg class="fill-current" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_130_9756)">

@@ -5,7 +5,7 @@
     <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
         <!-- Breadcrumb Start -->
         <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <h2 class="text-title-md2 font-bold text-black dark:text-white">
+            <h2 class="text-title-md2 font-bold text-black">
                 Form Data
             </h2>
         </div>
@@ -13,7 +13,7 @@
 
         @if ($errors->any())
             <div
-                class="flex w-full border-l-6 border-[#F87171] bg-[#F87171] bg-opacity-[15%] my-4 px-7 py-6 shadow-md dark:bg-[#1B1B24] dark:bg-opacity-30"
+                class="flex w-full border-l-6 border-[#F87171] bg-[#F87171] bg-opacity-[15%] my-4 px-7 py-6 shadow-md"
             >
                 <div
                 class="mr-5 flex h-9 w-full max-w-[36px] items-center justify-center rounded-lg bg-[#F87171]"
@@ -51,9 +51,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="flex flex-col">
                 <!-- Contact Form -->
-                <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-                    <div class="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
-                        <h3 class="font-medium text-black dark:text-white">
+                <div class="rounded-sm border border-stroke bg-white shadow-default">
+                    <div class="border-b border-stroke px-6.5 py-4">
+                        <h3 class="font-medium text-black">
                             Movie Form
                         </h3>
                     </div>
@@ -61,24 +61,24 @@
                         @csrf
                         <div class="p-6.5">
                             <div class="mb-4.5">
-                                <label class="mb-3 block text-sm font-medium text-black dark:text-white"> Name <span class="text-meta-1">*</span> </label>
+                                <label class="mb-3 block text-sm font-medium text-black"> Name <span class="text-meta-1">*</span> </label>
                                 <input
                                     id="title"
                                     name="title"
                                     type="text"
                                     placeholder="Enter anime title"
-                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter"
                                 />
                             </div>
 
                             <div class="mb-4.5">
-                                <label class="mb-3 block text-sm font-medium text-black dark:text-white"> Genre <span class="text-meta-1">*</span> </label>
-                                <div x-data="{ isOptionSelected: false }" class="relative z-20 bg-transparent dark:bg-form-input">
+                                <label class="mb-3 block text-sm font-medium text-black"> Genre <span class="text-meta-1">*</span> </label>
+                                <div x-data="{ isOptionSelected: false }" class="relative z-20 bg-transparent">
                                     <select
                                         id="genre_id"
                                         name="genre_id"
-                                        class="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent px-5 py-3 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
-                                        :class="isOptionSelected && 'text-black dark:text-white'"
+                                        class="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent px-5 py-3 outline-none transition focus:border-primary active:border-primary"
+                                        :class="isOptionSelected && 'text-black'"
                                         @change="isOptionSelected = true"
                                     >
                                         <option value="" class="text-body">
@@ -104,7 +104,7 @@
                             </div>
 
                             <div class="mb-4.5">
-                                <label class="mb-3 block text-sm font-medium text-black dark:text-white"> 
+                                <label class="mb-3 block text-sm font-medium text-black"> 
                                     Poster 
                                     <span class="text-meta-1">*</span> 
                                 </label>
@@ -113,18 +113,18 @@
                                     name="poster"
                                     type="text"
                                     placeholder="Enter poster link"
-                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter"
                                 />
                             </div>
 
                             <div class="mb-6">
-                                <label class="mb-3 block text-sm font-medium text-black dark:text-white"> Synopsis <span class="text-meta-1">*</span> </label>
+                                <label class="mb-3 block text-sm font-medium text-black"> Synopsis <span class="text-meta-1">*</span> </label>
                                 <textarea
                                     id="synopsis"
                                     name="synopsis"
                                     rows="6"
                                     placeholder="Type anime synopsis"
-                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter"
                                 ></textarea>
                             </div>
 
